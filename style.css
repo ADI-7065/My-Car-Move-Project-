@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  overflow-x: hidden;
+}
+h1 {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin: 0;
+}
+.scene {
+  height: 400px;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("src/bg.avif");
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  margin: 30px auto;
+  width: 90%;
+  max-width: 900px;
+}
+#car {
+  height: 100px;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+}
+#tree {
+  height: 150px;
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+  transition: 1s;
+}
+.controls {
+  text-align: center;
+  margin-top: 20px;
+}
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #333;
+  color: white;
+  margin: 10px 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background-color: #555;
+}
